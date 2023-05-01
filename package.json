@@ -5,14 +5,25 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
+    "format": "prettier .",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "prepare": "husky install"
   },
   "dependencies": {
-    "eslint": "8.39.0",
-    "eslint-config-next": "13.3.2",
-    "next": "13.3.2",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "eslint": "^8.39.0",
+    "eslint-config-next": "^13.3.2",
+    "next": "^13.3.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "eslint-config-prettier": "^8.8.0",
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.2",
+    "prettier": "^2.8.8"
+  },
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
   }
 }
