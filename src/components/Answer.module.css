@@ -1,0 +1,26 @@
+.answer {
+  cursor: pointer;
+  font: inherit;
+  appearance: none;
+  display: block;
+
+  border: 2px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--card-bg-color);
+
+  padding: 1rem;
+  width: 100%;
+  text-align: left;
+
+  /* remove */
+  margin: 0.8rem 0;
+}
+
+.answer:focus {
+  background: #e0eafc;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to left, #cfdef3, #e0eafc);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to left, #cfdef3, #e0eafc);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

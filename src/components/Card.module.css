@@ -1,0 +1,16 @@
+.card {
+  width: inherit;
+  min-width: 245px;
+  max-width: 512px;
+  padding: 1.6rem;
+  background-color: var(--card-bg-color);
+  border-radius: var(--border-radius);
+
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+.info {
+  color: #b6b4b4;
+  margin-bottom: 1rem;
+}
