@@ -1,11 +1,5 @@
 import Head from 'next/head';
 
-import Card from '@/components/Card';
-import Answer from '@/components/Answer';
-
-import styles from '@/styles/Home.module.css';
-import ProgressBar from '@/components/ProgressBar';
-
 export default function Home() {
   return (
     <>
@@ -15,19 +9,6 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ProgressBar count="1" />
-      <Card className={styles.question}>
-        <h2>
-          🥔 เซอร์ไพรส์สติ๊กเกอร์ซัพพลายเออร์ แรงใจพ่อค้าท็อปบูตเซ็กซ์ เทค
-          กรีนทอล์คหมายปองลาเต้คัตเอาต์ มะกัน เย้ว บอดี้บิ๊กเที่ยงวันรีสอร์ต ?
-        </h2>
-        <br />
-        <br />
-        <Answer>แอดมิสชันซามูไรเห่ย</Answer>
-        <Answer>ไทม์โฮลวีตปัจฉิมนิเทศแอคทีฟ</Answer>
-        <Answer>วีนโดมิโนแอ็คชั่นโนติส</Answer>
-        <Answer>ผลไม้เป่ายิงฉุบริคเตอร์เหมยเพรส</Answer>
-      </Card>
     </>
   );
 }
