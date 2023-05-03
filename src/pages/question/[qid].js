@@ -65,17 +65,20 @@ const QuestionPage = () => {
 
   return (
     <div className={styles.container}>
-      <ProgressBar count={question.depth} />
-      <Card className={styles.question}>
-        <h2>{question.title}</h2>
-        <br />
-        <br />
-        {question.answers.map((answer) => (
-          <Answer key={answer.to} to={answer.to}>
-            {answer.title}
-          </Answer>
-        ))}
-      </Card>
+      <div>
+        <p className={styles.pageInfo}>{question.depth} of 8</p>
+        <ProgressBar count={question.depth} />
+        <Card className={styles.question}>
+          <h2>{question.title}</h2>
+          <br />
+          <br />
+          {question.answers.map((answer) => (
+            <Answer key={answer.to} to={answer.to}>
+              {answer.title}
+            </Answer>
+          ))}
+        </Card>
+      </div>
     </div>
   );
 };
