@@ -1,8 +1,19 @@
+.checkbox {
+  width: 22px;
+  border: 2px solid var(--border-color);
+  border-radius: 50%;
+
+  margin-right: 10px;
+}
+
 .answer {
+  outline: none;
+  display: flex;
+  flex-direction: row;
+
   cursor: pointer;
   font: inherit;
   appearance: none;
-  display: block;
 
   border: 2px solid var(--border-color);
   border-radius: var(--border-radius);
@@ -16,11 +27,17 @@
   margin: 0.8rem 0;
 }
 
+.answer:active .checkbox {
+  border-color: #6375d0;
+  background-color: #6375d0;
+}
+
 .answer:focus {
+  border-color: #6375d0;
   background: #e0eafc;
-  /* fallback for old browsers */
-  background: -webkit-linear-gradient(to left, #cfdef3, #e0eafc);
-  /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to left, #cfdef3, #e0eafc);
-  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.answer:focus:not(:active) .checkbox {
+  border: 2px solid var(--default-copy-color);
 }

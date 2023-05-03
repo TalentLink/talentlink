@@ -1,5 +1,4 @@
 import '@/styles/globals.css';
-
 import { Anuphan, Chonburi } from 'next/font/google';
 
 const chonburi = Chonburi({
