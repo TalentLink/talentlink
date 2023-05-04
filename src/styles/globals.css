@@ -2,12 +2,14 @@
   --bg-color: #ececec;
 
   --border-radius: 1rem;
+  --border-thickness: 2px;
   --border-color: #e4e4e4;
 
   --default-copy-color: #222222;
-  --inverted-copy-color: #222222;
+  --inverted-copy-color: #f3f3f3;
   --emphasis-copy-color: #1b1b1b;
 
+  --control-padding: 1rem;
   --control-bg-color: #6375d0;
 
   --card-bg-color: #fffdf9;
@@ -60,6 +62,10 @@ body {
 a {
   color: inherit;
   text-decoration: none;
+}
+
+a:focus-visible {
+  outline: none;
 }
 
 @media (prefers-color-scheme: dark) {

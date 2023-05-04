@@ -1,0 +1,16 @@
+.button {
+  width: 100%;
+  font: inherit;
+  padding: var(--control-padding);
+
+  color: var(--inverted-copy-color);
+
+  border: var(--border-thickness) solid var(--control-bg-color);
+  border-radius: var(--border-radius);
+  background-color: var(--control-bg-color);
+}
+
+.button:focus-visible {
+  outline: var(--border-thickness) solid cadetblue;
+  outline-offset: 2px;
+}
