@@ -39,8 +39,8 @@ const QuestionPage = () => {
   return (
     <div className={styles.container}>
       <div>
-        <p className={styles.pageInfo}>{question.depth} of 8</p>
-        <ProgressBar count={question.depth} />
+        <p className={styles.pageInfo}>{question.depth} of 4</p>
+        <ProgressBar count={question.depth} maxCount={4} />
         <animated.div style={zoomAnimation}>
           <Card className={styles.question}>
             <h2>{question.title}</h2>
