@@ -67,3 +67,8 @@ a {
     color-scheme: dark;
   }
 }
+
+#__next,
+main {
+  height: 100%;
+}
