@@ -5,7 +5,10 @@
   --border-color: #e4e4e4;
 
   --default-copy-color: #222222;
+  --inverted-copy-color: #222222;
   --emphasis-copy-color: #1b1b1b;
+
+  --control-bg-color: #6375d0;
 
   --card-bg-color: #fffdf9;
 }
@@ -17,6 +20,7 @@
     --border-color: #505050;
 
     --default-copy-color: #dbdbdb;
+    --inverted-copy-color: #1b1b1b;
     --emphasis-copy-color: #f3f3f3;
 
     --card-bg-color: #2b2b2b;

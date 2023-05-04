@@ -14,6 +14,7 @@
   outline: none;
   display: flex;
   flex-direction: row;
+  align-items: center;
 
   cursor: pointer;
   font: inherit;
@@ -38,8 +39,9 @@
 }
 
 .answer:active .checkbox {
-  border-color: #6375d0;
-  background-color: #6375d0;
+  color: var(--inverted-copy-color);
+  border-color: var(--control-bg-color);
+  background-color: var(--control-bg-color);
 }
 
 .answer:active img,
@@ -48,7 +50,8 @@
 }
 
 .answer:focus {
-  border-color: #6375d0;
+  color: var(--inverted-copy-color);
+  border-color: var(--control-bg-color);
   background: #e0eafc;
   background: linear-gradient(to left, #cfdef3, #e0eafc);
 }
