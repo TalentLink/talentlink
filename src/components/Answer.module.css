@@ -1,5 +1,6 @@
 .checkbox {
-  width: 22px;
+  min-width: 22px;
+  height: 22px;
   border: 2px solid var(--border-color);
   border-radius: 50%;
 
@@ -28,12 +29,14 @@
 }
 
 .answer:active .checkbox {
-  border-color: #6375d0;
-  background-color: #6375d0;
+  color: var(--inverted-copy-color);
+  border-color: var(--control-bg-color);
+  background-color: var(--control-bg-color);
 }
 
 .answer:focus {
-  border-color: #6375d0;
+  color: var(--inverted-copy-color);
+  border-color: var(--control-bg-color);
   background: #e0eafc;
   background: linear-gradient(to left, #cfdef3, #e0eafc);
 }
