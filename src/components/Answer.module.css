@@ -1,7 +1,7 @@
 .checkbox {
   min-width: 22px;
   height: 22px;
-  border: 2px solid var(--border-color);
+  border: var(--border-thickness) solid var(--border-color);
   border-radius: 50%;
 
   margin-right: 10px;
@@ -17,16 +17,16 @@
   font: inherit;
   appearance: none;
 
-  border: 2px solid var(--border-color);
+  border: var(--border-thickness) solid var(--border-color);
   border-radius: var(--border-radius);
   background-color: var(--card-bg-color);
 
-  padding: 1rem;
+  padding: var(--control-padding);
+
   width: 100%;
   text-align: left;
 
-  /* remove */
-  margin: 0.8rem 0;
+  margin-top: 0.8rem;
 }
 
 .answer:active .checkbox {
@@ -43,5 +43,5 @@
 }
 
 .answer:focus:not(:active) .checkbox {
-  border: 2px solid var(--default-copy-color);
+  border: var(--border-thickness) solid var(--default-copy-color);
 }
