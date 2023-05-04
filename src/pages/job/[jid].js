@@ -32,7 +32,7 @@ const JobPage = () => {
         <h2 className={styles.job}>{job.title}</h2>
         <p className={styles.text}>{job.description}</p>
         <Link href="#">
-          <Button>Share</Button>
+          <Button secondary>Share</Button>
         </Link>
         <Link href={job.to}>
           <Button>Opportunities at LSEG</Button>
