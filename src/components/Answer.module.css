@@ -1,4 +1,7 @@
 .checkbox {
+  display: flex;
+  align-items: center;
+  width: 22px;
   min-width: 22px;
   height: 22px;
   border: var(--border-thickness) solid var(--border-color);
@@ -29,10 +32,21 @@
   margin-top: 0.8rem;
 }
 
+.answer img {
+  display: none;
+  width: 18px;
+  height: 14px;
+}
+
 .answer:active .checkbox {
   color: var(--inverted-copy-color);
   border-color: var(--control-bg-color);
   background-color: var(--control-bg-color);
+}
+
+.answer:active img,
+.answer:focus img {
+  display: block;
 }
 
 .answer:focus {
