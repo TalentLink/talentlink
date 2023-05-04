@@ -8,9 +8,16 @@
   border: var(--border-thickness) solid var(--control-bg-color);
   border-radius: var(--border-radius);
   background-color: var(--control-bg-color);
+
+  margin-top: 0.8rem;
 }
 
 .button:focus-visible {
   outline: var(--border-thickness) solid cadetblue;
   outline-offset: 2px;
+}
+
+.secondary {
+  color: var(--default-copy-color);
+  background-color: var(--card-bg-color);
 }

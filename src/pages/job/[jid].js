@@ -1,5 +1,6 @@
 import { useRouter } from 'next/router';
 import Link from 'next/link';
+import Image from 'next/image';
 
 import Card from '@/components/Card';
 import Button from '@/components/Button';
@@ -20,8 +21,19 @@ const JobPage = () => {
   return (
     <div className={styles.container}>
       <Card className={styles.card}>
+        <Image
+          priority
+          className={styles.image}
+          src="/engineer.svg"
+          alt="Picture of an engineer"
+          width={180}
+          height={180}
+        />
         <h2 className={styles.job}>{job.title}</h2>
         <p className={styles.text}>{job.description}</p>
+        <Link href="#">
+          <Button>Share</Button>
+        </Link>
         <Link href={job.to}>
           <Button>Opportunities at LSEG</Button>
         </Link>
