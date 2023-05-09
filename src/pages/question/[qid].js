@@ -44,14 +44,14 @@ const QuestionPage = () => {
       <animated.div style={zoomAnimation}>
         <Card className={styles.card}>
           <h5 className={styles.info}>เลือกคำตอบที่ใช่ตัวคุณที่สวด</h5>
-          <h1 className={styles.question}>{question.title}</h1>
+          <h1 className={styles.question}>{question.question}</h1>
           {question.answers.map((answer) => (
             <Answer
               key={answer.to}
               to={answer.to}
               handleClick={handleClickAnswer}
             >
-              {answer.title}
+              {answer.answer}
             </Answer>
           ))}
         </Card>

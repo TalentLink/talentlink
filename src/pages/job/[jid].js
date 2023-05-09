@@ -29,12 +29,12 @@ const JobPage = () => {
           width={180}
           height={180}
         />
-        <h2 className={styles.job}>{job.title}</h2>
+        <h2 className={styles.job}>{job.job}</h2>
         <p className={styles.text}>{job.description}</p>
-        <Link href="#">
+        <Link href="#" tabIndex={-1}>
           <Button secondary>Share</Button>
         </Link>
-        <Link href={job.to}>
+        <Link href={job.to} tabIndex={-1}>
           <Button>Opportunities at LSEG</Button>
         </Link>
       </Card>
