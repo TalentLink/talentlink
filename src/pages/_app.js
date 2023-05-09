@@ -9,7 +9,7 @@ const chonburi = Chonburi({
 });
 
 const anuphan = Anuphan({
-  weight: ['300'],
+  weight: ['300', '600'],
   fallback: ['sans-serif'],
   variable: '--font-content',
   subsets: ['thai'],

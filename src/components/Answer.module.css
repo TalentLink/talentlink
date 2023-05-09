@@ -38,8 +38,8 @@
   height: 14px;
 }
 
+.answer:focus .checkbox,
 .answer:active .checkbox {
-  color: var(--inverted-copy-color);
   border-color: var(--control-bg-color);
   background-color: var(--control-bg-color);
 }
@@ -50,12 +50,7 @@
 }
 
 .answer:focus {
-  color: var(--inverted-copy-color);
+  color: var(--default-copy-color);
   border-color: var(--control-bg-color);
-  background: #e0eafc;
-  background: linear-gradient(to left, #cfdef3, #e0eafc);
-}
-
-.answer:focus:not(:active) .checkbox {
-  border: var(--border-thickness) solid var(--default-copy-color);
+  background: var(--control-bg-gradient);
 }

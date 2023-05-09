@@ -6,11 +6,13 @@
   --border-color: #e4e4e4;
 
   --default-copy-color: #222222;
-  --inverted-copy-color: #f3f3f3;
+  --inverted-copy-color: #dbdbdb;
   --emphasis-copy-color: #1b1b1b;
 
   --control-padding: 1rem;
   --control-bg-color: #6375d0;
+  --control-bg-gradient: linear-gradient(to left, #cfdef3, #e0eafc);
+  --control-focus-ring: #5f9ea0;
 
   --card-bg-color: #fffdf9;
 }
@@ -25,8 +27,9 @@
     --inverted-copy-color: #1b1b1b;
     --emphasis-copy-color: #f3f3f3;
 
-    --control-bg-color: #a5b1ec;
-
+    --control-bg-color: #b3bdef;
+    --control-bg-gradient: linear-gradient(to left, #363434, #272727);
+    --control-focus-ring: #a6cacb;
     --card-bg-color: #2b2b2b;
   }
 }

@@ -14,8 +14,6 @@
   flex-direction: column;
 
   width: inherit;
-  min-width: 245px;
-  max-width: 512px;
   padding: 1.6rem;
   background-color: var(--card-bg-color);
   border-radius: var(--border-radius);
