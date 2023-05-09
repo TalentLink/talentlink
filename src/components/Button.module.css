@@ -16,11 +16,6 @@
   margin-top: 0.8rem;
 }
 
-.button:focus-visible {
-  outline: var(--border-thickness) solid var(--control-focus-ring);
-  outline-offset: 2px;
-}
-
 .secondary {
   color: var(--default-copy-color);
   background-color: var(--card-bg-color);

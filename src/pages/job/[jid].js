@@ -20,7 +20,7 @@ const JobPage = () => {
 
   return (
     <div className={styles.container}>
-      <Card className={styles.card}>
+      <Card>
         <Image
           priority
           className={styles.image}

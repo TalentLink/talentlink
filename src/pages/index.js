@@ -1,4 +1,21 @@
 import Head from 'next/head';
+import Link from 'next/link';
+import Image from 'next/image';
+
+import Card from '@/components/Card';
+import styles from '@/styles/Home.module.css';
+
+function StartButton() {
+  return (
+    <Link href="/question/question-0" className={styles.startButton}>
+      เริ่มเลย
+    </Link>
+  );
+}
+
+function Shadow() {
+  return <div className={styles.shadow}></div>;
+}
 
 export default function Home() {
   return (
@@ -9,6 +26,22 @@ export default function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <div className={styles.container}>
+        <Card>
+          <h1 style={{ fontSize: '1.5rem' }}>คุณหมาะสมกับ role ไหน</h1>
+          <h1 style={{ fontSize: '1.2rem' }}>ใน Tech industry ?</h1>
+          <Image
+            priority
+            className={styles.image}
+            src="/start.svg"
+            alt="Questions"
+            width={230}
+            height={230}
+          />
+          <StartButton></StartButton>
+          <Shadow></Shadow>
+        </Card>
+      </div>
     </>
   );
 }

@@ -42,7 +42,7 @@ const QuestionPage = () => {
       <p className={styles.pageInfo}>{question.depth} of 4</p>
       <ProgressBar count={question.depth} maxCount={4} />
       <animated.div style={zoomAnimation}>
-        <Card className={styles.card}>
+        <Card>
           <h5 className={styles.info}>เลือกคำตอบที่ใช่ตัวคุณที่สวด</h5>
           <h1 className={styles.question}>{question.question}</h1>
           {question.answers.map((answer) => (
