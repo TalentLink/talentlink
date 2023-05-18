@@ -9,13 +9,9 @@
 
 .card {
   position: relative;
-
   display: flex;
   flex-direction: column;
-
   overflow: hidden;
-
-  margin: 1rem;
   padding: 1.4rem;
   background-color: var(--card-bg-color);
   border-radius: var(--border-radius);

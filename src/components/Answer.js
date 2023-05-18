@@ -20,7 +20,7 @@ export default function Answer({ children, to, handleClick }) {
     handleClick();
     setTimeout(() => {
       router.push(to);
-    }, 100);
+    }, 200);
   };
   return (
     <Link href={to} className={styles.answer} onClick={handleClickLink}>

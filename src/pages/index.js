@@ -27,7 +27,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div className={styles.container}>
-        <Card>
+        <Card className={styles.home}>
           <h1 style={{ fontSize: '1.5rem' }}>คุณหมาะสมกับ role ไหน</h1>
           <h1 style={{ fontSize: '1.2rem' }}>ใน Tech industry ?</h1>
           <Image

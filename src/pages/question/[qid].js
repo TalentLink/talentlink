@@ -19,7 +19,7 @@ const QuestionPage = () => {
     transform: isZoomedIn ? 'scale(0.9)' : 'scale(1)',
     opacity: isZoomedIn ? 0 : 1,
     config: {
-      duration: 100,
+      duration: 200,
     },
     onRest: () => {
       if (isZoomedIn) {

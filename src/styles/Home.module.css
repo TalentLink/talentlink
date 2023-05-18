@@ -1,13 +1,17 @@
 .container {
   height: 100%;
   margin: 0 auto;
+  padding: 40px 20px;
   min-width: 245px;
   max-width: 512px;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
   flex-direction: column;
+}
+
+.home {
+  min-width: 500px;
 }
 
 .info {
