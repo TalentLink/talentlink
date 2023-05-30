@@ -11,9 +11,9 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "eslint": "^8.39.0",
-    "eslint-config-next": "^13.3.2",
-    "next": "^13.3.2",
+    "eslint": "^8.41.0",
+    "eslint-config-next": "^13.4.4",
+    "next": "^13.4.4",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-spring": "^9.7.1"
