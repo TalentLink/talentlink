@@ -1,7 +1,7 @@
 import '@/styles/globals.css';
-import { Anuphan, Chonburi } from 'next/font/google';
+import { Anuphan, Mitr } from 'next/font/google';
 
-const chonburi = Chonburi({
+const mitr = Mitr({
   weight: ['400'],
   fallback: ['cursive'],
   variable: '--font-header',
@@ -17,7 +17,7 @@ const anuphan = Anuphan({
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${anuphan.variable} ${chonburi.variable}`}>
+    <main className={`${anuphan.variable} ${mitr.variable}`}>
       <Component {...pageProps} />
     </main>
   );
