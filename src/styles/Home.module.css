@@ -1,49 +1,3 @@
-.container {
-  height: 100%;
-  margin: 0 auto;
-  padding: 40px 20px;
-  min-width: 245px;
-  max-width: 512px;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  flex-direction: column;
-}
-
-.home {
-  min-width: 500px;
-}
-
-.info {
-  color: #b6b4b4;
-  margin-bottom: 1rem;
-}
-
-.pageInfo {
-  text-align: center;
-  font-size: 14px;
-}
-
-.question,
-.job {
-  margin: 1rem 0;
-}
-
-.job {
-  font-size: 2.2rem;
-  text-align: center;
-}
-
-.image {
-  color: red;
-
-  align-self: center;
-}
-
-.text {
-  margin: 0.8rem 0;
-}
-
 .shadow {
   position: absolute;
   bottom: -50px;
@@ -63,11 +17,11 @@
 
   margin: 0 auto;
   font: inherit;
-  font-size: 1.75rem;
+  font-size: 1.65rem;
   font-weight: bold;
   outline: none;
-  width: 200px;
-  height: 100px;
+  width: 180px;
+  height: 90px;
 
   border-radius: 40% 60% 30% 50%;
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),

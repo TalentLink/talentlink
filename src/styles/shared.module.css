@@ -1,0 +1,10 @@
+.container {
+  margin: 0 auto;
+  padding: 20px 20px;
+  min-width: 245px;
+  max-width: 512px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+}

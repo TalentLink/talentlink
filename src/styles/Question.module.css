@@ -1,0 +1,9 @@
+.info {
+  color: var(--muted-copy-color);
+  margin-bottom: 0.85rem;
+}
+
+.page {
+  text-align: center;
+  font-size: 14px;
+}

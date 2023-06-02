@@ -4,8 +4,8 @@ import Answer from '@/components/Answer';
 import { useState } from 'react';
 import { useSpring, animated } from 'react-spring';
 
-import styles from '@/styles/Home.module.css';
 import ProgressBar from '@/components/ProgressBar';
+import styles from '@/styles/Question.module.css';
 
 import questions from '../../questions.js';
 
@@ -38,8 +38,8 @@ const QuestionPage = () => {
   };
 
   return (
-    <div className={styles.container}>
-      <p className={styles.pageInfo}>{question.depth} of 4</p>
+    <>
+      <p className={styles.page}>{question.depth} of 4</p>
       <ProgressBar count={question.depth} maxCount={4} />
       <animated.div style={zoomAnimation}>
         <Card>
@@ -56,7 +56,7 @@ const QuestionPage = () => {
           ))}
         </Card>
       </animated.div>
-    </div>
+    </>
   );
 };
 
