@@ -5,7 +5,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "format": "prettier .",
+    "format": "prettier --write . --ignore-unknown",
     "start": "next start",
     "lint": "next lint",
     "prepare": "husky install"
@@ -19,6 +19,7 @@
     "react-spring": "^9.7.1"
   },
   "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "^4.1.1",
     "eslint-config-prettier": "^8.8.0",
     "husky": "^8.0.3",
     "lint-staged": "^13.2.2",

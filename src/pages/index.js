@@ -1,12 +1,13 @@
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
 
 import Card from '@/components/Card';
+
 import styles from '@/styles/Home.module.css';
 
 function StartButton() {
   return (
-    <Link href="/question/question-0" className={styles.startButton}>
+    <Link href="/questionnaire" className={styles.startButton}>
       เริ่มเลย
     </Link>
   );

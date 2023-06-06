@@ -1,13 +1,13 @@
-import { useRouter } from 'next/router';
-import Link from 'next/link';
 import Image from 'next/image';
+import Link from 'next/link';
+import { useRouter } from 'next/router';
 
-import Card from '@/components/Card';
 import Button from '@/components/Button';
+import Card from '@/components/Card';
+
+import jobs from '@/data/jobs.js';
 
 import styles from '@/styles/Job.module.css';
-
-import jobs from '../../jobs.js';
 
 const JobPage = () => {
   const router = useRouter();
@@ -31,7 +31,7 @@ const JobPage = () => {
         width={180}
         height={180}
       />
-      <h2 className={styles.job}>{job.job}</h2>
+      <h3 className={styles.job}>คำตอบที่คุณได้คือ {job.job}!</h3>
       <p className={styles.jobDescription}>{job.description}</p>
       <Link href="#" tabIndex={-1}>
         <Button secondary>Share</Button>
