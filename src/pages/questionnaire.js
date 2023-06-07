@@ -35,25 +35,25 @@ function findJobIndex(keys) {
     }
   }
 
-  // Matches when at least 3 letters are matched
+  // Matches when at least 3 letters or 75% are matched
   return matched >= 3 ? jobIndex : jobs.length - 1;
 }
 
 // FOR TESTING PURPOSE
-console.log(jobs[findJobIndex(['A', 'D', 'K', 'Q'])]);
-console.log(jobs[findJobIndex(['A', 'E', 'K', 'Q'])]);
-console.log(jobs[findJobIndex(['A', 'D', 'K', 'W'])]);
-console.log(jobs[findJobIndex(['A', 'D', 'M', 'W'])]);
-console.log(jobs[findJobIndex(['D', 'M', 'Q', 'W'])]);
-console.log(jobs[findJobIndex(['E', 'M', 'Q', 'W'])]);
-console.log(jobs[findJobIndex(['C', 'E', 'K', 'P'])]);
-console.log(jobs[findJobIndex(['C', 'E', 'N', 'P'])]);
-console.log(jobs[findJobIndex(['A', 'E', 'M', 'Q'])]);
-console.log(jobs[findJobIndex(['B', 'E', 'M', 'Q'])]);
-console.log(jobs[findJobIndex(['D', 'G', 'K', 'P'])]);
-console.log(jobs[findJobIndex(['D', 'H', 'K', 'P'])]);
-console.log(jobs[findJobIndex(['D', 'J', 'K', 'Q'])]);
-console.log(jobs[findJobIndex(['E', 'J', 'N', 'Q'])]);
+// console.log(jobs[findJobIndex(['A', 'D', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['A', 'E', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['A', 'D', 'K', 'W'])]);
+// console.log(jobs[findJobIndex(['A', 'D', 'M', 'W'])]);
+// console.log(jobs[findJobIndex(['D', 'M', 'Q', 'W'])]);
+// console.log(jobs[findJobIndex(['E', 'M', 'Q', 'W'])]);
+// console.log(jobs[findJobIndex(['C', 'E', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['C', 'E', 'N', 'P'])]);
+// console.log(jobs[findJobIndex(['A', 'E', 'M', 'Q'])]);
+// console.log(jobs[findJobIndex(['B', 'E', 'M', 'Q'])]);
+// console.log(jobs[findJobIndex(['D', 'G', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['D', 'H', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['D', 'J', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['E', 'J', 'N', 'Q'])]);
 
 const PERSONALITY = [];
 
