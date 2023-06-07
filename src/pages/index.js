@@ -13,28 +13,21 @@ function StartButton() {
   );
 }
 
-function Shadow() {
-  return <div className={styles.shadow}></div>;
-}
-
-export default function Home() {
+export default function HomePage() {
   return (
     <>
       <Card>
-        <h1 style={{ fontSize: '1.7rem' }}>คุณหมาะสมกับ role ไหน</h1>
-        <h1 style={{ fontSize: '1.55rem' }}>ใน Tech industry ?</h1>
+        <h1 className={styles.title}>คุณหมาะสมกับ role ไหน</h1>
+        <h1 className={styles.subTitle}>ใน Tech industry ?</h1>
         <Image
           priority
-          style={{
-            alignSelf: 'center',
-          }}
+          className={styles.image}
           src="/start.svg"
           alt="Questions"
           width={220}
           height={220}
         />
         <StartButton></StartButton>
-        <Shadow></Shadow>
       </Card>
     </>
   );

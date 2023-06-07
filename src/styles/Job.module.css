@@ -1,8 +1,9 @@
 .job {
-  font-size: 2.2rem;
+  font-size: 1.7rem;
   text-align: center;
 }
 
+.image,
 .jobDescription {
   margin: 0.8rem 0;
 }

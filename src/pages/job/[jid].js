@@ -9,7 +9,7 @@ import jobs from '@/data/jobs.js';
 
 import styles from '@/styles/Job.module.css';
 
-const JobPage = () => {
+export default function JobPage() {
   const router = useRouter();
   const { jid } = router.query;
   const job = jobs[jid];
@@ -28,19 +28,20 @@ const JobPage = () => {
         }}
         src="/engineer.svg"
         alt="Picture of an engineer"
+        className={styles.image}
         width={180}
         height={180}
       />
-      <h3 className={styles.job}>คำตอบที่คุณได้คือ {job.job}!</h3>
+      <h4 className={styles.job}>{job.job}</h4>
       <p className={styles.jobDescription}>{job.description}</p>
-      <Link href="#" tabIndex={-1}>
-        <Button secondary>Share</Button>
-      </Link>
-      <Link href={job.to} tabIndex={-1}>
-        <Button>Opportunities at LSEG</Button>
-      </Link>
+      <section style={{}}>
+        <Link href="#" tabIndex={-1}>
+          <Button secondary>Share</Button>
+        </Link>
+        <Link href={job.to} tabIndex={-1}>
+          <Button>Opportunities at LSEG</Button>
+        </Link>
+      </section>
     </Card>
   );
-};
-
-export default JobPage;
+}

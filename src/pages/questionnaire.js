@@ -12,12 +12,17 @@ import questions from '@/data/questions';
 
 import styles from '@/styles/Question.module.css';
 
-const compareArray = (arr1, arr2) => {
+function compareArray(arr1, arr2) {
   const result = arr1.filter((a) => arr2.includes(a));
-  return result.length === 4 ? result : null;
-};
 
-const findJobIndex = (keys) => {
+  if (result.length === 4) {
+    return result;
+  }
+
+  return null;
+}
+
+function findJobIndex(keys) {
   for (let i = 0; i < personalities.length; i++) {
     const potentialPersonalities = personalities[i];
 
@@ -30,11 +35,27 @@ const findJobIndex = (keys) => {
       }
     }
   }
-};
+}
+
+// FOR TESTING PURPOSE
+// console.log(jobs[findJobIndex(['A', 'D', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['A', 'E', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['A', 'D', 'K', 'W'])]);
+// console.log(jobs[findJobIndex(['A', 'D', 'M', 'W'])]);
+// console.log(jobs[findJobIndex(['D', 'M', 'Q', 'W'])]);
+// console.log(jobs[findJobIndex(['E', 'M', 'Q', 'W'])]);
+// console.log(jobs[findJobIndex(['C', 'E', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['C', 'E', 'N', 'P'])]);
+// console.log(jobs[findJobIndex(['A', 'E', 'M', 'Q'])]);
+// console.log(jobs[findJobIndex(['B', 'E', 'M', 'Q'])]);
+// console.log(jobs[findJobIndex(['D', 'G', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['D', 'H', 'K', 'P'])]);
+// console.log(jobs[findJobIndex(['D', 'J', 'K', 'Q'])]);
+// console.log(jobs[findJobIndex(['E', 'J', 'N', 'Q'])]);
 
 const PERSONALITY = [];
 
-const Questionnaire = () => {
+export default function QuestionnairePage() {
   const router = useRouter();
 
   const [questionNo, setQuestionNo] = useState(0);
@@ -61,23 +82,32 @@ const Questionnaire = () => {
   }, []);
 
   if (!question) {
+    // TODO: generic error page
     return <></>;
   }
 
-  const onAnswerClick = (key) => {
+  function onAnswerClick(key) {
     setIsZoomedIn(!isZoomedIn);
 
     if (questionNo + 1 === TOTAL_QUESTIONS) {
-      const index = findJobIndex(PERSONALITY);
-      console.log('DEBUG:', PERSONALITY, jobs[index]);
+      console.log(
+        '----------------------------------------------------------------------'
+      );
+      console.log('INPUT:', PERSONALITY);
+      console.log('MATCH PERSONALITY:', personalities[index]);
+      console.log('JOB:', jobs[index]);
+      console.log(
+        '----------------------------------------------------------------------'
+      );
 
-      router.replace(`/job/${index ?? jobs.length - 1}`);
+      const index = findJobIndex(PERSONALITY) ?? jobs.length - 1;
+      router.replace(`/job/${index}`);
       return;
     }
 
     PERSONALITY.push(key);
     setQuestionNo(questionNo + 1);
-  };
+  }
 
   return (
     <>
@@ -98,6 +128,4 @@ const Questionnaire = () => {
       </animated.div>
     </>
   );
-};
-
-export default Questionnaire;
+}

@@ -1,11 +1,18 @@
-.shadow {
-  position: absolute;
-  bottom: -50px;
-  left: -5%;
-  width: 110%;
-  height: 120px;
-  border-radius: 50%;
-  background-color: var(--control-bg-accent);
+.title,
+.subTitle {
+  margin: 0 1rem;
+}
+
+.title {
+  font-size: 1.7rem;
+}
+
+.subTitle {
+  font-size: 1.55rem;
+}
+
+.image {
+  align-self: center;
 }
 
 .startButton {
@@ -15,9 +22,10 @@
 
   text-transform: uppercase;
 
-  margin: 0 auto;
+  margin: 1rem auto;
+  margin-bottom: 2rem;
   font: inherit;
-  font-size: 1.65rem;
+  font-size: 1.55rem;
   font-weight: bold;
   outline: none;
   width: 180px;
