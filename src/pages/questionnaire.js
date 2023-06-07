@@ -14,44 +14,46 @@ import styles from '@/styles/Question.module.css';
 
 function compareArray(arr1, arr2) {
   const result = arr1.filter((a) => arr2.includes(a));
-
-  if (result.length === 4) {
-    return result;
-  }
-
-  return null;
+  return result.length >= 3 ? result : null;
 }
 
 function findJobIndex(keys) {
+  let matched = 0;
+  let jobIndex = -1;
+
   for (let i = 0; i < personalities.length; i++) {
     const potentialPersonalities = personalities[i];
 
     for (let j = 0; j < potentialPersonalities.length; j++) {
       const personality = potentialPersonalities[j];
-      const found = compareArray(keys, personality);
+      const match = compareArray(keys, personality) || [];
 
-      if (Boolean(found)) {
-        return i;
+      if (match.length >= matched) {
+        jobIndex = i;
+        matched = match.length;
       }
     }
   }
+
+  // Matches when at least 3 letters are matched
+  return matched >= 3 ? jobIndex : jobs.length - 1;
 }
 
 // FOR TESTING PURPOSE
-// console.log(jobs[findJobIndex(['A', 'D', 'K', 'Q'])]);
-// console.log(jobs[findJobIndex(['A', 'E', 'K', 'Q'])]);
-// console.log(jobs[findJobIndex(['A', 'D', 'K', 'W'])]);
-// console.log(jobs[findJobIndex(['A', 'D', 'M', 'W'])]);
-// console.log(jobs[findJobIndex(['D', 'M', 'Q', 'W'])]);
-// console.log(jobs[findJobIndex(['E', 'M', 'Q', 'W'])]);
-// console.log(jobs[findJobIndex(['C', 'E', 'K', 'P'])]);
-// console.log(jobs[findJobIndex(['C', 'E', 'N', 'P'])]);
-// console.log(jobs[findJobIndex(['A', 'E', 'M', 'Q'])]);
-// console.log(jobs[findJobIndex(['B', 'E', 'M', 'Q'])]);
-// console.log(jobs[findJobIndex(['D', 'G', 'K', 'P'])]);
-// console.log(jobs[findJobIndex(['D', 'H', 'K', 'P'])]);
-// console.log(jobs[findJobIndex(['D', 'J', 'K', 'Q'])]);
-// console.log(jobs[findJobIndex(['E', 'J', 'N', 'Q'])]);
+console.log(jobs[findJobIndex(['A', 'D', 'K', 'Q'])]);
+console.log(jobs[findJobIndex(['A', 'E', 'K', 'Q'])]);
+console.log(jobs[findJobIndex(['A', 'D', 'K', 'W'])]);
+console.log(jobs[findJobIndex(['A', 'D', 'M', 'W'])]);
+console.log(jobs[findJobIndex(['D', 'M', 'Q', 'W'])]);
+console.log(jobs[findJobIndex(['E', 'M', 'Q', 'W'])]);
+console.log(jobs[findJobIndex(['C', 'E', 'K', 'P'])]);
+console.log(jobs[findJobIndex(['C', 'E', 'N', 'P'])]);
+console.log(jobs[findJobIndex(['A', 'E', 'M', 'Q'])]);
+console.log(jobs[findJobIndex(['B', 'E', 'M', 'Q'])]);
+console.log(jobs[findJobIndex(['D', 'G', 'K', 'P'])]);
+console.log(jobs[findJobIndex(['D', 'H', 'K', 'P'])]);
+console.log(jobs[findJobIndex(['D', 'J', 'K', 'Q'])]);
+console.log(jobs[findJobIndex(['E', 'J', 'N', 'Q'])]);
 
 const PERSONALITY = [];
 
@@ -90,7 +92,7 @@ export default function QuestionnairePage() {
     setIsZoomedIn(!isZoomedIn);
 
     if (questionNo + 1 === TOTAL_QUESTIONS) {
-      const index = findJobIndex(PERSONALITY) ?? jobs.length - 1;
+      const index = findJobIndex(PERSONALITY);
 
       console.log(
         '----------------------------------------------------------------------'
