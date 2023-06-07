@@ -90,6 +90,8 @@ export default function QuestionnairePage() {
     setIsZoomedIn(!isZoomedIn);
 
     if (questionNo + 1 === TOTAL_QUESTIONS) {
+      const index = findJobIndex(PERSONALITY) ?? jobs.length - 1;
+
       console.log(
         '----------------------------------------------------------------------'
       );
@@ -100,7 +102,6 @@ export default function QuestionnairePage() {
         '----------------------------------------------------------------------'
       );
 
-      const index = findJobIndex(PERSONALITY) ?? jobs.length - 1;
       router.replace(`/job/${index}`);
       return;
     }
