@@ -19,6 +19,13 @@ export default function JobPage() {
     return <></>;
   }
 
+  /**
+   * TODO:
+   * - picture
+   * - button texts
+   * - better job ids to prevent manually changing job
+   */
+
   return (
     <Card>
       <Image
