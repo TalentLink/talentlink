@@ -49,7 +49,7 @@ const jobs = [
     to: '#',
   },
   {
-    job: 'No match',
+    job: 'No match 🥲',
     description: '',
     img: '',
     to: '#',
