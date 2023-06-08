@@ -20,7 +20,6 @@ export default function HomePage() {
     <>
       <Card>
         <h1 className={styles.title}>{label.appTitle}</h1>
-        {/* <h1 className={styles.subTitle}>ใน Tech industry ?</h1> */}
         <Image
           priority
           className={styles.image}
