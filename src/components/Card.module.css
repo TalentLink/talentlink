@@ -12,11 +12,11 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  overflow: hidden;
+  overflow: scroll;
   padding: 1.4rem;
   background-color: var(--card-bg-color);
   border-radius: var(--border-radius);
-  /* min-height: 550px; */
+  /* height: 620px; */
   box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
     0 4px 6px -2px rgba(0, 0, 0, 0.05);
   animation: fadein 0.3s ease-in;

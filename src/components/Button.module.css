@@ -3,16 +3,13 @@
   cursor: pointer;
   font: inherit;
   font-weight: bold;
+  font-size: 1.2rem;
   padding: var(--control-padding);
-
   text-align: center;
-
   color: var(--inverted-copy-color);
-
   border: var(--border-thickness) solid var(--control-bg-color);
   border-radius: var(--border-radius);
   background-color: var(--control-bg-color);
-
   margin-top: 0.8rem;
 }
 

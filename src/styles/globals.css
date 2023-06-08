@@ -1,17 +1,16 @@
 :root {
+  --primary-color: #0070f3;
+  --accent-color: #35ea5e;
   --bg-color: #ececec;
-
   --border-radius: 1rem;
   --border-thickness: 2px;
   --border-color: #e4e4e4;
-
   --default-copy-color: #222222;
   --inverted-copy-color: #efefef;
   --emphasis-copy-color: #1b1b1b;
   --muted-copy-color: #b6b4b4;
-
   --control-padding: 1rem;
-  --control-bg-color: #6375d0;
+  --control-bg-color: var(--primary-color);
   --control-bg-accent: #cfdef3;
   --control-bg-gradient: linear-gradient(
     to left,
@@ -19,23 +18,18 @@
     #e0eafc
   );
   --control-focus-ring: #5f9ea0;
-
   --card-bg-color: #fffdf9;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
+    --primary-color: #5fa9ff;
     --bg-color: #4f4f4f;
-
     --border-color: #505050;
-
     --default-copy-color: #efefef;
     --inverted-copy-color: #222222;
     --emphasis-copy-color: #f3f3f3;
-
-    --control-bg-color: #b3bdef;
     --control-bg-accent: #363434;
-
     --control-bg-gradient: linear-gradient(to left, #363434, #272727);
     --control-focus-ring: #a6cacb;
     --card-bg-color: #2b2b2b;

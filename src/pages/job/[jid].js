@@ -6,6 +6,7 @@ import Button from '@/components/Button';
 import Card from '@/components/Card';
 
 import jobs from '@/data/jobs.js';
+import { label } from '@/data/label';
 
 import styles from '@/styles/Job.module.css';
 
@@ -39,8 +40,11 @@ export default function JobPage() {
         width={180}
         height={180}
       />
-      <h4 className={styles.job}>{job.job}</h4>
+      <h4 className={styles.headline}>{job.headline}</h4>
       <p className={styles.jobDescription}>{job.description}</p>
+      <p className={styles.jobIs}>{label.jobIs}</p>
+      <h4 className={styles.job}>{job.job}</h4>
+
       <section style={{}}>
         <Link href="#" tabIndex={-1}>
           <Button secondary>Share</Button>
