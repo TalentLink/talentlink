@@ -49,7 +49,7 @@ export default function JobPage() {
         <Link href="#" tabIndex={-1}>
           <Button secondary>Share</Button>
         </Link>
-        <Link href={job.to} tabIndex={-1}>
+        <Link href={job.to} tabIndex={-1} target="_blank">
           <Button>Opportunities at LSEG</Button>
         </Link>
       </section>
