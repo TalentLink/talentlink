@@ -23,7 +23,7 @@ export default function HomePage() {
         <Image
           priority
           className={styles.image}
-          src="/start.svg"
+          src="/undraw_online_test_re_kyfx.svg"
           alt="Questions"
           width={220}
           height={220}
