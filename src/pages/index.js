@@ -1,6 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
+import Button from '@/components/Button';
 import Card from '@/components/Card';
 
 import { label } from '@/data/label';
@@ -9,8 +10,8 @@ import styles from '@/styles/Home.module.css';
 
 function StartButton() {
   return (
-    <Link href="/questionnaire" className={styles.startButton}>
-      {label.startButton}
+    <Link href="/questionnaire" tabIndex={-1}>
+      <Button>{label.startButton}</Button>
     </Link>
   );
 }
