@@ -4,7 +4,8 @@
 }
 
 .title {
-  font-size: 1.7rem;
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .subTitle {
@@ -13,28 +14,4 @@
 
 .image {
   align-self: center;
-}
-
-.startButton {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  text-transform: uppercase;
-
-  margin: 1rem auto;
-  margin-bottom: 2rem;
-  font: inherit;
-  font-size: 1.55rem;
-  font-weight: bold;
-  outline: none;
-  width: 180px;
-  height: 90px;
-
-  border-radius: 40% 60% 30% 50%;
-  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
-    0 4px 6px -2px rgba(0, 0, 0, 0.05);
-
-  background: var(--control-bg-gradient);
-  border: var(--border-thickness) solid var(--control-bg-color);
 }

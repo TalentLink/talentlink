@@ -1,0 +1,43 @@
+.job {
+  font-size: 1.4rem;
+  text-align: center;
+  text-transform: capitalize;
+  font-weight: bold;
+  padding: 10px 0;
+  background-image: linear-gradient(
+    179deg,
+    var(--accent-color) 0%,
+    var(--accent-color) 50%,
+    transparent 54%,
+    transparent 100%
+  );
+  background-size: 100% 15%;
+  background-repeat: repeat-x;
+  background-position: left 0% bottom 20%;
+  margin: 0 20px;
+}
+
+.headline {
+  font-size: 1.7rem;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.jobIs {
+  text-align: center;
+}
+
+.image {
+  align-self: center;
+}
+
+.image,
+.jobDescription {
+  margin: 0.8rem 0;
+}
+
+@media (max-width: 380px) {
+  .job {
+    background-image: none;
+  }
+}

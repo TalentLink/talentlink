@@ -7,6 +7,7 @@ import Card from '@/components/Card';
 import ProgressBar from '@/components/ProgressBar';
 
 import jobs from '@/data/jobs';
+import { label } from '@/data/label';
 import personalities from '@/data/personalities';
 import questions from '@/data/questions';
 
@@ -120,7 +121,7 @@ export default function QuestionnairePage() {
       <ProgressBar count={questionNo + 1} maxCount={TOTAL_QUESTIONS} />
       <animated.div style={zoomAnimation}>
         <Card>
-          <h5 className={styles.info}>เลือกคำตอบที่ใช่ตัวคุณที่สุด</h5>
+          <h5 className={styles.info}>{label.questionHeading}</h5>
           <h1 className={styles.question}>{question.question}</h1>
           {question.answers.map(({ key, answer }) => (
             <Answer key={answer} onClick={() => onAnswerClick(key)}>

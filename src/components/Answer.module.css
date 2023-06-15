@@ -6,7 +6,6 @@
   height: 22px;
   border: var(--border-thickness) solid var(--border-color);
   border-radius: 50%;
-
   margin-right: 10px;
 }
 
@@ -15,7 +14,6 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-
   cursor: pointer;
   font: inherit;
   appearance: none;
