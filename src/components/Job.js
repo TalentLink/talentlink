@@ -16,6 +16,8 @@ export default function Job(props) {
   const { jid } = router.query;
   const job = jobs[jid];
 
+  const shareLink = `https://talentlink.vercel.app/job/${jid}/preview`;
+
   if (!job) {
     return <></>;
   }
@@ -23,18 +25,14 @@ export default function Job(props) {
   return (
     <>
       <Head>
-        <title>TalentLink | BKK</title>
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content={`${job.headline} | ${job.job}`} />
+        <meta property="og:description" content={job.description} />
+        <meta property="og:url" content={shareLink} />
         <meta
-          name="description"
-          content="ลองทำแบบสอบถามเพื่อหาอาชีพสาย Tech ที่เหมาะกับคุณ"
-          key="desc"
+          property="og:image"
+          content="https://corporate.tubitv.com/wp-content/uploads/2021/04/Anpanman-Still-2-e1618503534745.jpg"
         />
-        <meta property="og:title" content="TalentLink | BKK" />
-        <meta
-          property="og:description"
-          content="ลองทำแบบสอบถามเพื่อหาอาชีพสาย Tech ที่เหมาะกับคุณ"
-        />
-        <meta property="og:image" content="https://picsum.photos/400/500" />
       </Head>
       <Card>
         <Image
@@ -54,7 +52,7 @@ export default function Job(props) {
           <Link
             href={
               props.mode === 'share'
-                ? `https://www.facebook.com/sharer.php?u=https://talentlink.vercel.app/job/${jid}/preview/&hashtag=%23BKKtalentlink`
+                ? `https://www.facebook.com/sharer.php?u=${shareLink}/&hashtag=%23BKKtalentlink`
                 : '/'
             }
             tabIndex={-1}
