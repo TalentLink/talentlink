@@ -54,7 +54,7 @@ export default function Job(props) {
           <Link
             href={
               props.mode === 'share'
-                ? `https://www.facebook.com/sharer/sharer.php?u=talentlink.vercel.app/job/${jid}/preview/&hashtag=%23BKKtalentlink`
+                ? `https://www.facebook.com/sharer.php?u=https://talentlink.vercel.app/job/${jid}/preview/&hashtag=%23BKKtalentlink`
                 : '/'
             }
             tabIndex={-1}
