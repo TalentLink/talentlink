@@ -16,6 +16,7 @@
   background-position: left 0% bottom 20%;
   margin: 0 20px;
 }
+
 .headline {
   font-size: 1.7rem;
   text-align: center;
@@ -24,6 +25,10 @@
 
 .jobIs {
   text-align: center;
+}
+
+.image {
+  align-self: center;
 }
 
 .image,

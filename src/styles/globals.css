@@ -17,7 +17,7 @@
     var(--control-bg-accent),
     #e0eafc
   );
-  --control-focus-ring: #5f9ea0;
+  --control-focus-ring: var(--primary-color);
   --card-bg-color: #fffdf9;
 }
 
@@ -31,7 +31,6 @@
     --emphasis-copy-color: #f3f3f3;
     --control-bg-accent: #363434;
     --control-bg-gradient: linear-gradient(to left, #363434, #272727);
-    --control-focus-ring: #a6cacb;
     --card-bg-color: #2b2b2b;
   }
 }
