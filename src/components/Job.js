@@ -50,6 +50,7 @@ export default function Job(props) {
         <Link
           href="https://refinitiv.wd3.myworkdayjobs.com/en-US/Careers?locationCountry=873d0f604e3b458c990cb4d83a5c0f14"
           tabIndex={-1}
+          target="_blank"
         >
           <Button>Opportunities at LSEG</Button>
         </Link>
