@@ -25,7 +25,6 @@ export default function Job(props) {
   return (
     <>
       <Head>
-        <meta property="og:type" content="website" />
         <meta property="og:title" content={`${job.headline} | ${job.job}`} />
         <meta property="og:description" content={job.description} />
         <meta property="og:url" content={shareLink} />

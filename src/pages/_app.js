@@ -28,14 +28,7 @@ export default function App({ Component, pageProps }) {
           content="ลองทำแบบสอบถามเพื่อหาอาชีพสาย Tech ที่เหมาะกับคุณ"
           key="desc"
         />
-
         <meta property="og:type" content="website" />
-        <meta property="og:title" content="TalentLink | BKK" />
-        <meta
-          property="og:description"
-          content="ลองทำแบบสอบถามเพื่อหาอาชีพสาย Tech ที่เหมาะกับคุณ"
-        />
-
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <main className={`${anuphan.variable} ${mitr.variable}`}>
