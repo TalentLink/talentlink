@@ -1,5 +1,6 @@
 import { Anuphan, Mitr } from 'next/font/google';
 import Head from 'next/head';
+import Script from 'next/script';
 
 import '@/styles/globals.css';
 import styles from '@/styles/shared.module.css';
@@ -21,6 +22,19 @@ const anuphan = Anuphan({
 export default function App({ Component, pageProps }) {
   return (
     <>
+      <Script
+        strategy="lazyOnload"
+        src={`https://www.googletagmanager.com/gtag/js?id=G-Z5T1MSDEG5`}
+      ></Script>
+      <Script strategy="lazyOnload" id="public-ga">
+        {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-Z5T1MSDEG5');
+          `}
+      </Script>
       <Head>
         <title>TalentLink | BKK</title>
         <meta
