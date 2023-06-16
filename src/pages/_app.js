@@ -1,6 +1,8 @@
 import { Anuphan, Mitr } from 'next/font/google';
 import Head from 'next/head';
 
+import { label } from '@/data/label';
+
 import '@/styles/globals.css';
 import styles from '@/styles/shared.module.css';
 
@@ -23,11 +25,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Head>
         <title>TalentLink | BKK</title>
-        <meta
-          name="description"
-          content="ลองทำแบบสอบถามเพื่อหาอาชีพสาย Tech ที่เหมาะกับคุณ"
-          key="desc"
-        />
+        <meta name="description" content={label.meta} key="desc" />
         <meta property="og:type" content="website" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
