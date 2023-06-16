@@ -56,6 +56,7 @@ export default function Job(props) {
             }
             tabIndex={-1}
             target="_blank"
+            className={props.mode === 'share' ? 'share-button' : 'try-again'}
           >
             <Button secondary>
               {props.mode === 'share' ? label.share : label.tryQuestionaire}
@@ -65,6 +66,7 @@ export default function Job(props) {
             href="https://refinitiv.wd3.myworkdayjobs.com/en-US/Careers?locationCountry=873d0f604e3b458c990cb4d83a5c0f14"
             tabIndex={-1}
             target="_blank"
+            className="lseg-link"
           >
             <Button>Opportunities at LSEG</Button>
           </Link>
