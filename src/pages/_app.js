@@ -1,5 +1,6 @@
 import { Anuphan, Mitr } from 'next/font/google';
 import Head from 'next/head';
+import Script from 'next/script';
 
 import { label } from '@/data/label';
 
