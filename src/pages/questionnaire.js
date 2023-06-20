@@ -95,15 +95,15 @@ export default function QuestionnairePage() {
     if (questionNo + 1 === TOTAL_QUESTIONS) {
       const index = findJobIndex(PERSONALITY);
 
-      console.log(
-        '----------------------------------------------------------------------'
-      );
-      console.log('INPUT:', PERSONALITY);
-      console.log('MATCH PERSONALITY:', personalities[index]);
-      console.log('JOB:', jobs[index]);
-      console.log(
-        '----------------------------------------------------------------------'
-      );
+      // console.log(
+      //   '----------------------------------------------------------------------'
+      // );
+      // console.log('INPUT:', PERSONALITY);
+      // console.log('MATCH PERSONALITY:', personalities[index]);
+      // console.log('JOB:', jobs[index]);
+      // console.log(
+      //   '----------------------------------------------------------------------'
+      // );
 
       router.replace(`/job/${index}`);
       return;
