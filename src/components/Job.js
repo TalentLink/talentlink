@@ -31,8 +31,6 @@ export default function Job(props) {
         <meta property="og:description" content={job.description} />
         <meta property="og:url" content={shareLink} />
         <meta property="og:image" content={job.img} />
-
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Card>
         <Image
