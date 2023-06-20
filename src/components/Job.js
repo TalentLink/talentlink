@@ -32,6 +32,7 @@ export default function Job(props) {
         <meta property="og:url" content={shareLink} />
         <meta property="og:image" content={job.img} />
         <meta property="og:type" content="website" />
+        <meta property="og:locale" content="th_TH" />
       </Head>
       <Card>
         <Image
