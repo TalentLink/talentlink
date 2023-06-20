@@ -29,6 +29,7 @@
 
 .image {
   align-self: center;
+  border-radius: 100%;
 }
 
 .image,

@@ -36,8 +36,8 @@ export default function Job(props) {
       <Card>
         <Image
           priority
-          src="/engineer.svg"
-          alt="Picture of an engineer"
+          src={job.img}
+          alt={`Picture of ${job.job}`}
           className={styles.image}
           width={180}
           height={180}

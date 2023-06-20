@@ -5,7 +5,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <Script
+        {/* <Script
           strategy="lazyOnload"
           src={`https://www.googletagmanager.com/gtag/js?id=G-Z5T1MSDEG5`}
         ></Script>
@@ -30,15 +30,15 @@ export default function Document() {
             })(window,document,'script','dataLayer','GTM-NV3HD52');
         `,
           }}
-        ></Script>
+        ></Script> */}
       </Head>
       <body>
-        <noscript
+        {/* <noscript
           dangerouslySetInnerHTML={{
             __html: `iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NV3HD52"
           height="0" width="0" style="display:none;visibility:hidden"></iframe>`,
           }}
-        ></noscript>
+        ></noscript> */}
         <Main />
         <NextScript />
       </body>
