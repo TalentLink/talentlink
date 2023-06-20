@@ -24,12 +24,6 @@ const anuphan = Anuphan({
 export default function App({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>TalentLink | BKK</title>
-        <meta name="description" content={label.meta} key="desc" />
-        <meta property="og:type" content="website" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-      </Head>
       <main className={`${anuphan.variable} ${mitr.variable}`}>
         <div className={styles.container}>
           <Component {...pageProps} />

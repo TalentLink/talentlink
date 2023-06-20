@@ -25,13 +25,14 @@ export default function Job(props) {
   return (
     <>
       <Head>
+        <title>TalentLink | BKK</title>
+        <meta name="description" content={label.meta} key="desc" />
         <meta property="og:title" content={`${job.headline} | ${job.job}`} />
         <meta property="og:description" content={job.description} />
         <meta property="og:url" content={shareLink} />
-        <meta
-          property="og:image"
-          content="https://corporate.tubitv.com/wp-content/uploads/2021/04/Anpanman-Still-2-e1618503534745.jpg"
-        />
+        <meta property="og:image" content={job.img} />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <Card>
         <Image
