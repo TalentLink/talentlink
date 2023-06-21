@@ -19,6 +19,7 @@
 
 .headline {
   font-size: 1.7rem;
+  line-height: 1.7rem;
   text-align: center;
   text-transform: capitalize;
 }
