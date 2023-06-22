@@ -1,6 +1,6 @@
+import { Analytics } from '@vercel/analytics/react';
 import { Anuphan, Mitr } from 'next/font/google';
 import Head from 'next/head';
-import Script from 'next/script';
 
 import { label } from '@/data/label';
 
@@ -34,6 +34,7 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </div>
       </main>
+      <Analytics />
     </>
   );
 }
